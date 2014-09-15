@@ -2,6 +2,9 @@ package com.example.datastorageandroid;
 
  
 
+import com.example.datastorageandroid.ClassFile;
+ 
+
 import android.app.Activity;
 
 import android.os.Bundle;
@@ -54,7 +57,9 @@ public class Save_data_into_internal_file extends Activity {
 				if(texttosave.getText().toString() != null && !texttosave.getText().toString() .equals("")){
 					
 					
-					
+					ClassFile sfile = new ClassFile();
+					  
+					sfile.SaveDataFile(texttosave.getText().toString());
 					
 					texttosave.setText("");
 					
