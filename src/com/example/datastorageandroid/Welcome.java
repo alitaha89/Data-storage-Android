@@ -12,9 +12,35 @@ public class Welcome extends Activity{
 		// TODO Auto-generated method stub
 		super.onCreate(AliTaha);
 		setContentView(R.layout.welcome);
-	
+		Thread timer  = new Thread(){
+			public void run(){
+				try{
+					
+					sleep(5000);
+					
+				} catch (InterruptedException e){
+					e.printStackTrace();
+				}finally{
+					
+					
+				
+					
+					Intent openStartingPoint = new Intent("com.example.datastorageandroid.MENU");
+					startActivity(openStartingPoint);
+					
+				
+					
+					
+				}
+				
+				
+			}
+			
+			
+		};
+		timer.start();
 	}
-	// TODO Auto-generated method stub  test comit
+
 	@Override
 	protected void onPause() {
 		// TODO Auto-generated method stub
