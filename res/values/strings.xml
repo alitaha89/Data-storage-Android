@@ -4,5 +4,6 @@
     <string name="app_name">data storage android</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+	<string name="write_text_here_local">Write text here to save into a local file</string>
+	<string name="button_label_save">Save</string>
 </resources>
