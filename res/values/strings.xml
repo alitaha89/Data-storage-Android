@@ -6,5 +6,11 @@
     <string name="action_settings">Settings</string>
 	<string name="write_text_here_local">Write text here to save into a local file</string>
 	<string name="button_label_save">Save</string>
+	<string name="button_label_view_saved">View Saved data</string>
+	<string name="button_label_empty">Empty file</string>
+	
 	<string name="title_activity_save_internal_file">Save data into internal file</string>
+	<string name="title_activity_view_internal_file">Internal file data</string>	
+	<string name="fileempty">file is empty</string>
+	
 </resources>
