@@ -255,7 +255,6 @@ int id button 0x7f05003d
 int id checkbox 0x7f05002d
 int id collapseActionView 0x7f05000d
 int id default_activity_button 0x7f050028
-int id description 0x7f05003c
 int id dialog 0x7f05000e
 int id disableHome 0x7f050008
 int id dropdown 0x7f05000f
@@ -294,6 +293,7 @@ int id showTitle 0x7f050006
 int id split_action_bar 0x7f05001e
 int id submit_area 0x7f050039
 int id tabMode 0x7f050002
+int id texttosave 0x7f05003c
 int id title 0x7f05002b
 int id top_action_bar 0x7f050020
 int id up 0x7f050021
@@ -346,6 +346,7 @@ int string action_settings 0x7f0a000f
 int string app_name 0x7f0a000d
 int string button_label_save 0x7f0a0011
 int string hello_world 0x7f0a000e
+int string title_activity_save_internal_file 0x7f0a0012
 int string write_text_here_local 0x7f0a0010
 int style AppBaseTheme 0x7f0b008b
 int style AppTheme 0x7f0b008c

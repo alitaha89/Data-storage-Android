@@ -36,6 +36,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.datastorageandroid.Save_data_into_internal_file"
+            android:label="@string/title_activity_save_internal_file" >
+        </activity>
     </application>
 	
 </manifest>

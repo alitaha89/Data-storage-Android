@@ -1100,7 +1100,6 @@ containing a value of this type.
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int default_activity_button=0x7f050028;
-        public static final int description=0x7f05003c;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
         public static final int dropdown=0x7f05000f;
@@ -1139,6 +1138,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
+        public static final int texttosave=0x7f05003c;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
@@ -1248,6 +1248,7 @@ containing a value of this type.
         public static final int app_name=0x7f0a000d;
         public static final int button_label_save=0x7f0a0011;
         public static final int hello_world=0x7f0a000e;
+        public static final int title_activity_save_internal_file=0x7f0a0012;
         public static final int write_text_here_local=0x7f0a0010;
     }
     public static final class style {
