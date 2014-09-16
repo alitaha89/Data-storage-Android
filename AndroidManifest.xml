@@ -44,6 +44,14 @@
             android:name="com.example.datastorageandroid.view_internal_file_data"
             android:label="@string/title_activity_view_internal_file" >
         </activity>
+        <activity
+            android:name="com.example.datastorageandroid.Save_data_into_online_file"
+            android:label="@string/title_activity_save_online_file" >
+        </activity>
+        <activity
+            android:name="com.example.datastorageandroid.view_online_file_data"
+            android:label="@string/title_activity_view_online_file" >
+        </activity>
     </application>
 	
 </manifest>

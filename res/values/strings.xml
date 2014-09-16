@@ -11,6 +11,8 @@
 	
 	<string name="title_activity_save_internal_file">Save data into internal file</string>
 	<string name="title_activity_view_internal_file">Internal file data</string>	
+	<string name="title_activity_save_online_file">Save data into online file</string>
+	<string name="title_activity_view_online_file">Online file data</string>
 	<string name="fileempty">file is empty</string>
 	
 </resources>

@@ -1254,10 +1254,12 @@ containing a value of this type.
         public static final int button_label_empty=0x7f0a0013;
         public static final int button_label_save=0x7f0a0011;
         public static final int button_label_view_saved=0x7f0a0012;
-        public static final int fileempty=0x7f0a0016;
+        public static final int fileempty=0x7f0a0018;
         public static final int hello_world=0x7f0a000e;
         public static final int title_activity_save_internal_file=0x7f0a0014;
+        public static final int title_activity_save_online_file=0x7f0a0016;
         public static final int title_activity_view_internal_file=0x7f0a0015;
+        public static final int title_activity_view_online_file=0x7f0a0017;
         public static final int write_text_here_local=0x7f0a0010;
     }
     public static final class style {

@@ -352,10 +352,12 @@ int string app_name 0x7f0a000d
 int string button_label_empty 0x7f0a0013
 int string button_label_save 0x7f0a0011
 int string button_label_view_saved 0x7f0a0012
-int string fileempty 0x7f0a0016
+int string fileempty 0x7f0a0018
 int string hello_world 0x7f0a000e
 int string title_activity_save_internal_file 0x7f0a0014
+int string title_activity_save_online_file 0x7f0a0016
 int string title_activity_view_internal_file 0x7f0a0015
+int string title_activity_view_online_file 0x7f0a0017
 int string write_text_here_local 0x7f0a0010
 int style AppBaseTheme 0x7f0b008b
 int style AppTheme 0x7f0b008c
