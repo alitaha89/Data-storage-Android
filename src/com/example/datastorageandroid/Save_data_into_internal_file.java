@@ -53,6 +53,7 @@ public class Save_data_into_internal_file extends Activity {
 				ClassFile sfile = new ClassFile();
 				  
 				sfile.deleteDataFile();
+				 Toast.makeText(Save_data_into_internal_file.this, "local file deleted",Toast.LENGTH_LONG).show();
 			  
 			} catch(Exception e){
 				e.printStackTrace();
