@@ -59,10 +59,17 @@ HttpPost post;
 	    }
 	});
 	
+	buttonempty.setOnClickListener(new View.OnClickListener() {
+
+	    public void onClick(View arg0) {
+	        new deleteOnline().execute("");
+	    }
+	});
 	
   } 
 
  
+  
   
   private class saveOnline extends AsyncTask<String, Void, JSONObject>{
 
@@ -76,6 +83,45 @@ HttpPost post;
 
 	      List<NameValuePair> pairs = new ArrayList<NameValuePair>();   
 	      pairs.add(new BasicNameValuePair("data",texttosave.getText().toString()));   
+	        
+	      post.setEntity(new UrlEncodedFormEntity(pairs));   
+	      HttpResponse response = client.execute(post);
+	      int status=response.getStatusLine().getStatusCode();
+
+	      if(status == 200)
+	      {
+	          HttpEntity e=response.getEntity();
+	          String data=EntityUtils.toString(e);
+	          JSONObject last=new JSONObject(data);
+	          return last;
+
+	      }
+
+	  }
+
+	    catch(Exception e)
+	  {
+	      e.printStackTrace();   
+
+	  }
+
+	      return null;
+	  }
+
+  }
+  
+  private class deleteOnline extends AsyncTask<String, Void, JSONObject>{
+
+	  
+
+	  @Override
+	  protected JSONObject doInBackground(String... params) {
+	      Log.i("thread", "Doing Something...");
+	     //authentication operation
+	  try{
+
+	      List<NameValuePair> pairs = new ArrayList<NameValuePair>();   
+	      pairs.add(new BasicNameValuePair("exc","del"));   
 	        
 	      post.setEntity(new UrlEncodedFormEntity(pairs));   
 	      HttpResponse response = client.execute(post);
