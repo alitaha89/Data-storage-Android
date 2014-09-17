@@ -19,10 +19,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     // Database Name
     private static final String DATABASE_NAME = "textsManager";
  
-    // Contacts table name
+    // Texts table name
     private static final String TABLE_TEXTS = "texts";
  
-    // Contacts Table Columns names
+    // Texts Table Columns names
     private static final String KEY_ID = "id";
     private static final String KEY_TEXT = "text";
 
@@ -48,11 +48,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         // Create tables again
         onCreate(db);
     }
-    public void addText(Texttosavesqllite contact) {
+    public void addText(Texttosavesqllite text) {
         SQLiteDatabase db = this.getWritableDatabase();
      
         ContentValues values = new ContentValues();
-        values.put(KEY_TEXT, contact.getText()); // Contact Name
+        values.put(KEY_TEXT, text.getText()); // Text Name
 
      
         // Inserting Row
@@ -64,7 +64,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
     
     
-    public List<Texttosavesqllite> getAllContacts() {
+    public List<Texttosavesqllite> getAllTexts() {
         List<Texttosavesqllite> texttList = new ArrayList<Texttosavesqllite>();
         // Select All Query
         String selectQuery = "SELECT  * FROM " + TABLE_TEXTS;
@@ -79,12 +79,12 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             	text.setID(Integer.parseInt(cursor.getString(0)));
             	text.setText(cursor.getString(1));
 
-                // Adding contact to list
+                // Adding text to list
             	texttList.add(text);
             } while (cursor.moveToNext());
         }
  
-        // return contact list
+        // return text list
         return texttList;
     }
     
@@ -99,27 +99,31 @@ public class DatabaseHandler extends SQLiteOpenHelper {
      
         Texttosavesqllite text = new Texttosavesqllite(Integer.parseInt(cursor.getString(0)),
                 cursor.getString(1));
-        // return contact
+        // return text
         return text;
     }
     
-    public int updateContact(Texttosavesqllite contact) {
+    public int updateText(Texttosavesqllite text) {
         SQLiteDatabase db = this.getWritableDatabase();
      
         ContentValues values = new ContentValues();
-        values.put(KEY_TEXT, contact.getText());
+        values.put(KEY_TEXT, text.getText());
 
      
         // updating row
         return db.update(TABLE_TEXTS, values, KEY_ID + " = ?",
-                new String[] { String.valueOf(contact.getID()) });
+                new String[] { String.valueOf(text.getID()) });
     }
-    public void deleteText(Texttosavesqllite contact) {
+    public void deleteText(Texttosavesqllite text) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_TEXTS, KEY_ID + " = ?",
-                new String[] { String.valueOf(contact.getID()) });
+                new String[] { String.valueOf(text.getID()) });
         db.close();
     }
-    
+    public void deleteAllText() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TABLE_TEXTS, null,null);
+        db.close();
+    }
     
 }

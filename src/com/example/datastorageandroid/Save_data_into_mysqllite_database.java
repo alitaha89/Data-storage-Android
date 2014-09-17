@@ -32,9 +32,34 @@ public class Save_data_into_mysqllite_database extends Activity {
         
         addListenerOnButton();
         addListenerOnButtonview() ;
-        
+        addListenerOnButtonempty();
          
          
+    }
+    public void addListenerOnButtonempty()  {
+		
+  	  buttonempty.setOnClickListener(new OnClickListener() {
+   
+  	  @Override
+  	  public void onClick(View v) {
+  		  try{
+  				
+	  			DatabaseHandler db = new DatabaseHandler(Save_data_into_mysqllite_database.this);
+		         
+		        
+		        Log.d("drop: ", "Deleting .."); 
+		        db.deleteAllText();
+		        texttosave.setText("");
+  				 Toast.makeText(Save_data_into_mysqllite_database.this, "mysql data deleted",Toast.LENGTH_LONG).show();
+  			  
+  			} catch(Exception e){
+  				e.printStackTrace();
+  				
+  			}
+  		 
+  	  }
+   
+  	});
     }
     public void addListenerOnButtonview()  {
 		
