@@ -16,5 +16,6 @@
 	<string name="title_activity_view_online_file">Online file data</string>
 	<string name="title_activity_save_mysqllite_database">Save data into mysqllite database</string>
 	<string name="fileempty">file is empty</string>
-	
+	<string name="databaseempty">database is empty</string>
+	<string name="title_activity_view_mysqllite_data">mysqllite data</string>
 </resources>

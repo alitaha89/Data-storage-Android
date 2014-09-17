@@ -5,6 +5,7 @@ package com.example.datastorageandroid;
 import java.util.List;
  
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -30,20 +31,30 @@ public class Save_data_into_mysqllite_database extends Activity {
     	buttonempty = (Button) findViewById(R.id.buttonempty);
         
         addListenerOnButton();
-        
+        addListenerOnButtonview() ;
         
          
-        // Reading all contacts
-        Log.d("Reading: ", "Reading all contacts.."); 
-        /*List<Contact> contacts = db.getAllContacts();       
          
-        for (Contact cn : contacts) {
-            String log = "Id: "+cn.getID()+" ,Name: " + cn.getName() + " ,Phone: " + cn.getPhoneNumber();
-                // Writing Contacts to log
-        Log.d("Name: ", log);
-    }*/
     }
-    
+    public void addListenerOnButtonview()  {
+		
+  	  buttonview.setOnClickListener(new OnClickListener() {
+   
+  	  @Override
+  	  public void onClick(View v) {
+  		  try{
+  				Class<?> ourClass = Class.forName("com.example.datastorageandroid.View_mysqllite_data");
+  				Intent ourIntent = new Intent(Save_data_into_mysqllite_database.this,ourClass);
+  				startActivity(ourIntent);
+  			} catch(ClassNotFoundException e){
+  				e.printStackTrace();
+  				
+  			}
+  		 
+  	  }
+   
+  	});
+    }
     public void addListenerOnButton()  {
 
     	
