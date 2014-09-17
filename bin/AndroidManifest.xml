@@ -52,6 +52,10 @@
             android:name="com.example.datastorageandroid.view_online_file_data"
             android:label="@string/title_activity_view_online_file" >
         </activity>
+        <activity
+            android:name="com.example.datastorageandroid.Save_data_into_mysqllite_database"
+            android:label="@string/title_activity_save_mysqllite_database" >
+        </activity>
     </application>
 	
 </manifest>

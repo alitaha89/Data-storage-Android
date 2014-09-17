@@ -1,5 +1,8 @@
 package com.example.datastorageandroid;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -45,7 +48,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         // Create tables again
         onCreate(db);
     }
-    public void addContact(Texttosavesqllite contact) {
+    public void addText(Texttosavesqllite contact) {
         SQLiteDatabase db = this.getWritableDatabase();
      
         ContentValues values = new ContentValues();
@@ -58,6 +61,31 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         
         
         
+    }
+    
+    
+    public List<Texttosavesqllite> getAllContacts() {
+        List<Texttosavesqllite> texttList = new ArrayList<Texttosavesqllite>();
+        // Select All Query
+        String selectQuery = "SELECT  * FROM " + TABLE_TEXTS;
+ 
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+ 
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+            	Texttosavesqllite text = new Texttosavesqllite();
+            	text.setID(Integer.parseInt(cursor.getString(0)));
+            	text.setText(cursor.getString(1));
+
+                // Adding contact to list
+            	texttList.add(text);
+            } while (cursor.moveToNext());
+        }
+ 
+        // return contact list
+        return texttList;
     }
     
     public Texttosavesqllite getText(int id) {
