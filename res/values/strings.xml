@@ -6,6 +6,7 @@
     <string name="action_settings">Settings</string>
 	<string name="write_text_here_local">Write text here to save into a local file</string>
 	<string name="write_text_here_local_mysqllite">Write text here to save into a local mysqllite database</string>
+	<string name="write_text_here_cloud">Write text here to save into a cloud storage</string>
 	<string name="button_label_save">Save</string>
 	<string name="button_label_view_saved">View Saved data</string>
 	<string name="button_label_empty">Empty file</string>

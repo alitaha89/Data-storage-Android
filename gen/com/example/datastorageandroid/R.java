@@ -1199,14 +1199,15 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
         public static final int activity_main=0x7f030018;
-        public static final int save_data_into_internal_file=0x7f030019;
-        public static final int save_data_into_mysqllite_database=0x7f03001a;
-        public static final int save_data_into_online_file=0x7f03001b;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
-        public static final int view_internal_file_data=0x7f03001d;
-        public static final int view_mysqllite_data=0x7f03001e;
-        public static final int view_online_file_data=0x7f03001f;
-        public static final int welcome=0x7f030020;
+        public static final int cloud_storage=0x7f030019;
+        public static final int save_data_into_internal_file=0x7f03001a;
+        public static final int save_data_into_mysqllite_database=0x7f03001b;
+        public static final int save_data_into_online_file=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
+        public static final int view_internal_file_data=0x7f03001e;
+        public static final int view_mysqllite_data=0x7f03001f;
+        public static final int view_online_file_data=0x7f030020;
+        public static final int welcome=0x7f030021;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -1254,18 +1255,19 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int action_settings=0x7f0a000f;
         public static final int app_name=0x7f0a000d;
-        public static final int button_label_empty=0x7f0a0014;
-        public static final int button_label_save=0x7f0a0012;
-        public static final int button_label_view_saved=0x7f0a0013;
-        public static final int databaseempty=0x7f0a001b;
-        public static final int fileempty=0x7f0a001a;
+        public static final int button_label_empty=0x7f0a0015;
+        public static final int button_label_save=0x7f0a0013;
+        public static final int button_label_view_saved=0x7f0a0014;
+        public static final int databaseempty=0x7f0a001c;
+        public static final int fileempty=0x7f0a001b;
         public static final int hello_world=0x7f0a000e;
-        public static final int title_activity_save_internal_file=0x7f0a0015;
-        public static final int title_activity_save_mysqllite_database=0x7f0a0019;
-        public static final int title_activity_save_online_file=0x7f0a0017;
-        public static final int title_activity_view_internal_file=0x7f0a0016;
-        public static final int title_activity_view_mysqllite_data=0x7f0a001c;
-        public static final int title_activity_view_online_file=0x7f0a0018;
+        public static final int title_activity_save_internal_file=0x7f0a0016;
+        public static final int title_activity_save_mysqllite_database=0x7f0a001a;
+        public static final int title_activity_save_online_file=0x7f0a0018;
+        public static final int title_activity_view_internal_file=0x7f0a0017;
+        public static final int title_activity_view_mysqllite_data=0x7f0a001d;
+        public static final int title_activity_view_online_file=0x7f0a0019;
+        public static final int write_text_here_cloud=0x7f0a0012;
         public static final int write_text_here_local=0x7f0a0010;
         public static final int write_text_here_local_mysqllite=0x7f0a0011;
     }

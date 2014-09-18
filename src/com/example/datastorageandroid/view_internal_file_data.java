@@ -1,22 +1,9 @@
-
 package com.example.datastorageandroid;
-
-
-
 import com.example.datastorageandroid.ClassFile;
- 
-
 import android.app.Activity;
-
-
 import android.os.Bundle;
-
 import android.widget.EditText;
 
-
-
-
- 
 public class view_internal_file_data extends Activity {
  
 
