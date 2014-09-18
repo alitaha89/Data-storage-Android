@@ -19,4 +19,8 @@
 	<string name="fileempty">file is empty</string>
 	<string name="databaseempty">database is empty</string>
 	<string name="title_activity_view_mysqllite_data">mysqllite data</string>
+	
+	
+	<string name="link_to_dropbox">Link to Dropbox</string>
+    <string name="no_notes">No notes</string>
 </resources>
