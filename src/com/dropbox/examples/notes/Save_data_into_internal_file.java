@@ -5,6 +5,8 @@ package com.dropbox.examples.notes;
 
  
 
+import com.dropbox.examples.notes.R;
+
 import android.app.Activity;
 import android.content.Intent;
 

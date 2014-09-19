@@ -3,6 +3,8 @@ package com.dropbox.examples.notes;
  
 
 import java.util.List;
+
+import com.dropbox.examples.notes.R;
  
 import android.app.Activity;
 import android.content.Intent;

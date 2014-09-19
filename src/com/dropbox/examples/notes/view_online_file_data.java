@@ -15,6 +15,8 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
 
+import com.dropbox.examples.notes.R;
+
 
 
 import android.app.Activity;

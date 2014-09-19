@@ -37,7 +37,7 @@
         
         
         <activity
-            android:name=".NoteListActivity"
+            android:name=".Cloud_dropbox_storage"
             android:label="@string/title_note_list" >
            
         </activity>

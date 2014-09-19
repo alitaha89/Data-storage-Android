@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class Menu extends ListActivity{
 
 	
-	String classess[] = {"Save data into internal file","Save data into online file","Save data into mysqllite database","NoteListActivity"};
+	String classess[] = {"Save data into internal file","Save data into online file","Save data into mysqllite database","Cloud dropbox storage"};
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub

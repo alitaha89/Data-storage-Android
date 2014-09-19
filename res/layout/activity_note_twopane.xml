@@ -8,7 +8,7 @@
     android:divider="?android:attr/dividerHorizontal"
     android:orientation="horizontal"
     android:showDividers="middle"
-    tools:context=".NoteListActivity"
+    tools:context=".Cloud_dropbox_storage"
     tools:ignore="NewApi" >
 
     <fragment android:name="com.dropbox.examples.notes.NoteListFragment"
