@@ -1,5 +1,7 @@
-
 Stockage de données sous Android
+================================
+
+
  1-	Stockage des données temporaires d'une activité
  2-	Stockage des données persistantes
   a- préférences (couples de clé-valeur ou Shared Preferences)
