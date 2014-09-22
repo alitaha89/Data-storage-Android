@@ -77,7 +77,7 @@ public class Save_data_into_internal_file extends Activity {
 	  @Override
 	  public void onClick(View v) {
 		  try{
-				Class<?> ourClass = Class.forName("com.example.datastorageandroid.view_internal_file_data");
+				Class<?> ourClass = Class.forName("com.dropbox.examples.notes.view_internal_file_data");
 				Intent ourIntent = new Intent(Save_data_into_internal_file.this,ourClass);
 				startActivity(ourIntent);
 			} catch(ClassNotFoundException e){

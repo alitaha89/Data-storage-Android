@@ -70,7 +70,7 @@ public class Save_data_into_mysqllite_database extends Activity {
   	  @Override
   	  public void onClick(View v) {
   		  try{
-  				Class<?> ourClass = Class.forName("com.example.datastorageandroid.View_mysqllite_data");
+  				Class<?> ourClass = Class.forName("com.dropbox.examples.notes.View_mysqllite_data");
   				Intent ourIntent = new Intent(Save_data_into_mysqllite_database.this,ourClass);
   				startActivity(ourIntent);
   			} catch(ClassNotFoundException e){
