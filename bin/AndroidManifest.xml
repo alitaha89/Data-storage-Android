@@ -75,7 +75,10 @@
             android:name=".View_mysqllite_data"
             android:label="@string/title_activity_view_mysqllite_data" >
         </activity> 
-        
+         <activity
+            android:name=".Shared_preferences"
+            android:label="@string/shared_preferences" >
+        </activity> 
         
         
         <activity android:name="com.dropbox.sync.android.DbxAuthActivity" />

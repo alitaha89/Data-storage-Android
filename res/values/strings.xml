@@ -45,4 +45,14 @@
 	<string name="fileempty">file is empty</string>
 	<string name="databaseempty">database is empty</string>
 	<string name="title_activity_view_mysqllite_data">mysqllite data</string>
+	
+   <string name="name">Name</string>
+   <string name="phone">Phone</string>
+   <string name="email">Email</string>
+   <string name="street">Street</string>
+   <string name="country">City/State/Zip</string>
+
+   <string name="save">Save Contact</string>
+   <string name="shared_preferences">Shared Preferences</string>
+   
 </resources>

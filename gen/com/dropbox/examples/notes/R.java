@@ -22,8 +22,14 @@ public final class R {
     }
     public static final class id {
         public static final int button=0x7f070003;
+        public static final int button1=0x7f070012;
         public static final int buttonempty=0x7f070005;
         public static final int buttonview=0x7f070004;
+        public static final int editTextCity=0x7f070013;
+        public static final int editTextEmail=0x7f07000f;
+        public static final int editTextName=0x7f07000e;
+        public static final int editTextPhone=0x7f070016;
+        public static final int editTextStreet=0x7f070010;
         public static final int empty_text=0x7f07000c;
         public static final int error_message=0x7f070008;
         public static final int link_button=0x7f07000a;
@@ -33,8 +39,14 @@ public final class R {
         public static final int note_list=0x7f070001;
         public static final int note_loading=0x7f070007;
         public static final int old_version=0x7f070009;
+        public static final int scrollView1=0x7f07000d;
+        public static final int textView1=0x7f070011;
+        public static final int textView2=0x7f070014;
+        public static final int textView3=0x7f070018;
+        public static final int textView4=0x7f070017;
+        public static final int textView5=0x7f070015;
         public static final int texttosave=0x7f070002;
-        public static final int texttoview=0x7f07000d;
+        public static final int texttoview=0x7f070019;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -47,10 +59,11 @@ public final class R {
         public static final int save_data_into_internal_file=0x7f030007;
         public static final int save_data_into_mysqllite_database=0x7f030008;
         public static final int save_data_into_online_file=0x7f030009;
-        public static final int view_internal_file_data=0x7f03000a;
-        public static final int view_mysqllite_data=0x7f03000b;
-        public static final int view_online_file_data=0x7f03000c;
-        public static final int welcome=0x7f03000d;
+        public static final int shared_preferences=0x7f03000a;
+        public static final int view_internal_file_data=0x7f03000b;
+        public static final int view_mysqllite_data=0x7f03000c;
+        public static final int view_online_file_data=0x7f03000d;
+        public static final int welcome=0x7f03000e;
     }
     public static final class string {
         public static final int action_settings=0x7f050015;
@@ -59,7 +72,9 @@ public final class R {
         public static final int button_label_save=0x7f050019;
         public static final int button_label_view_saved=0x7f05001a;
         public static final int cancel=0x7f050007;
+        public static final int country=0x7f050028;
         public static final int databaseempty=0x7f050022;
+        public static final int email=0x7f050026;
         public static final int error_failed_load=0x7f050013;
         public static final int error_file_already_exists=0x7f050012;
         public static final int error_invalid_filename=0x7f050011;
@@ -68,15 +83,20 @@ public final class R {
         public static final int link_to_dropbox=0x7f050003;
         public static final int menu_delete=0x7f05000e;
         public static final int menu_rename=0x7f05000d;
+        public static final int name=0x7f050024;
         public static final int new_note_confirm=0x7f05000a;
         public static final int new_note_dialog_title=0x7f050008;
         public static final int new_note_name_hint=0x7f050009;
         public static final int new_note_option=0x7f050006;
         public static final int no_notes=0x7f050004;
         public static final int old_version=0x7f050010;
+        public static final int phone=0x7f050025;
         public static final int rename_note_confirm=0x7f05000c;
         public static final int rename_note_dialog_title=0x7f05000b;
+        public static final int save=0x7f050029;
+        public static final int shared_preferences=0x7f05002a;
         public static final int status_folder=0x7f05000f;
+        public static final int street=0x7f050027;
         public static final int title_activity_save_internal_file=0x7f05001c;
         public static final int title_activity_save_mysqllite_database=0x7f050020;
         public static final int title_activity_save_online_file=0x7f05001e;
