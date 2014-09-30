@@ -36,14 +36,14 @@ public class ClassFile{
 	public String ReadDataFile(){
 		
 		
-		return RdFisle("/data/data/com.example.datastorageandroid/data.txt");
+		return RdFisle("/data/data/com.dropbox.examples.notes/data.txt");
 		
 	} 
 	
 	 public void deleteDataFile(){
 		 
 		
-		 File file = new File("/data/data/com.example.datastorageandroid/data.txt");
+		 File file = new File("/data/data/com.dropbox.examples.notes/data.txt");
 		 file.delete();
 	  }
 
@@ -55,7 +55,7 @@ public class ClassFile{
 			 try {
 				
 				
-	             File myFile = new File("/data/data/com.example.datastorageandroid/data.txt");
+	             File myFile = new File("/data/data/com.dropbox.examples.notes/data.txt");
 	             myFile.createNewFile();
 	             FileOutputStream fOut = new FileOutputStream(myFile,true);
 	             OutputStreamWriter myOutWriter = new OutputStreamWriter(fOut);
