@@ -59,3 +59,28 @@ utilisé par le cache (partage par toutes les applications)
 On peut utilise le réseau (quand il est disponible) pour stocker et récupérer des données sur le Web.
 
 2.f- Base de données SQLite3
+SQLite est un système de base de données qui a la particularité de fonctionner sans serveur, on dit aussi "standalone" ou "base de données embarquée"
+ -Création de table avec CREATE TABLE : CREATE TABLE IF NOT EXISTS datastore(id INTEGER PRIMARY KEY, text TEXT) ;
+ -Effacement de table avec DROP TABLE :DROP TABLE datastore
+ -Insertion avec SQLiteDatabase.insert(String table, String nullColumnHack, ContentValues values)
+  *ContentValues est une sorte de Map où les valeurs des colonnes sont insérées avec put(String key, X value)
+ - Mise à jour : int SQLiteDatabase.update(String table,ContentValues values, String whereClause, String[] whereArgs)
+ -Suppression : SQLiteDatabase.delete(String table, String whereClause, String[] whereArgs)
+ 
+ 2.g-Cloud server (Drop box, Box, Google Cloud …)
+ Le Cloud computing est un concept de déportation sur des serveurs distants des traitements informatiques traditionnellement localisés sur le poste utilisateur
+ tutorial: https://www.dropbox.com/developers/datastore/tutorial/android
+
+
+refernces:
+ -www.github.com
+ -www.stackoverflow.com
+ -www.androidhive.info
+ -www.youtube.com/mybringback
+ -universite paris-est
+ -www.dropbox.com
+ -www.finalclap.com
+ -www.android-dev.fr
+ -www.developer.android.com
+
+ 
