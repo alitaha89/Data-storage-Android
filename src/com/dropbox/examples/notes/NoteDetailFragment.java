@@ -23,6 +23,7 @@ import com.dropbox.sync.android.DbxFile;
 import com.dropbox.sync.android.DbxFileSystem;
 import com.dropbox.sync.android.DbxPath;
 
+
 public class NoteDetailFragment extends Fragment {
     private static final String TAG = NoteDetailFragment.class.getName();
 
